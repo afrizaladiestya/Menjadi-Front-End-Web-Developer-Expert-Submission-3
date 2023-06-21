@@ -1,0 +1,143 @@
+@media only screen and (min-width: 1200px) {
+  nav {
+    padding: 0 100px;
+  }   
+.hero{
+  min-height: 800px;
+}
+  .list-resto {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .container-info {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-gap: 1em;
+    margin-top: 1em;
+  }
+
+  .resto-item_image-container {
+    min-width: 700px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .hero{
+    min-height: 600px;
+  }
+  .resto-item {
+    width: calc(100% / 2 - 16px);
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .hero{
+    min-height: 800px;
+  }
+  .resto-item_image-container {
+    min-width: 450px;
+    margin-bottom: 10px
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .restaurant-detail__info,
+  .restaurant-detail__menu-list,
+  .restaurant-detail__review {
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    gap: 50px;
+    margin: 0 auto;
+  }
+  .detail-review {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .resto-item_image-container {
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+  .hero{
+    min-height: 600px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .header_menu {
+    display: none;
+  }
+
+  .main-resto_label {
+    font-size: 26px;
+  }
+
+  .list-resto {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .resto-item_name {
+    font-size: 22px;
+  }
+  .main-resto_container {
+    padding: 0 30px;
+  }
+  
+}
+
+
+@media only screen and (max-width: 700px) {
+  .nav-container {
+    display: block;
+  }
+  .hero{
+    min-height: 400px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 10px;
+  }
+  .nav__menu ul {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_menu {
+    font-size: 20px;
+    display: block;
+  }
+  .nav-menu {
+    justify-content: start;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+  .main-resto_container {
+    padding: 0 20px;
+  }
+  .hero-container .hero-content-container {
+    text-align: left;
+    line-height: 1.5em;
+  }
+  .skip2content {
+    display: none;
+  }
+  .resto-item {
+    width: calc(100% / 1 - 16px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+      min-height: 300px;
+      background: url('../public/images/sharp/hero-image_4-small.jpg');
+  }
+
+  .hero .inner{
+    margin-top: 25px;
+  }
+}
